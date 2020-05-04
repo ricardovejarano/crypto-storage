@@ -11,6 +11,8 @@ import {
   MatButtonModule, MatCardModule, MatDialogModule, MatInputModule, MatTableModule,
   MatToolbarModule, MatMenuModule, MatIconModule, MatProgressSpinnerModule
 } from '@angular/material';
+import { LocalService } from './core/services/local.service';
+import { StorageService } from './core/services/storage.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import {
     MatIconModule,
     MatProgressSpinnerModule
   ],
-  providers: [],
+  providers: [
+    LocalService,
+    StorageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
