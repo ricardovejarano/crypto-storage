@@ -9,7 +9,7 @@ import { LocalService } from './core/services/local.service';
 
 export class AppComponent implements OnInit {
 
-  public username: string = '';
+  public name: string = '';
   public lastName: string = '';
 
   constructor(private localService: LocalService) {
@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   login() {
-    this.setLocalStorage(this.username, this.lastName);
+    this.setLocalStorage(this.name, this.lastName);
   }
 
 
