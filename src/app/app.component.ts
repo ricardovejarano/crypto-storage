@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  username;
+  password;
   title = 'crypto-storage';
+
+  login(){
+    alert(`Login ${this.username} ${this.password}`);
+  }
 }
